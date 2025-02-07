@@ -22,6 +22,7 @@ class AppShimmerEffect extends StatelessWidget {
           width: width,
           height: height,
           decoration: BoxDecoration(
+              shape: BoxShape.circle,
               color: color ?? AppColors.appGrey.withValues(alpha: .5),
               borderRadius: BorderRadius.circular(radius)),
         ));
