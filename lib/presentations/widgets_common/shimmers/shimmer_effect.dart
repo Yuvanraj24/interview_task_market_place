@@ -8,7 +8,9 @@ class AppShimmerEffect extends StatelessWidget {
       required this.width,
       required this.height,
       this.radius = 15,
-      this.color});
+      this.color
+
+      });
 
   final double width, height, radius;
   final Color? color;
@@ -24,7 +26,8 @@ class AppShimmerEffect extends StatelessWidget {
           decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: color ?? AppColors.appGrey.withValues(alpha: .5),
-              borderRadius: BorderRadius.circular(radius)),
+              // borderRadius: BorderRadius.circular(radius)
+          ),
         ));
   }
 }

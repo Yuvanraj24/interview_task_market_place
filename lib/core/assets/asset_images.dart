@@ -6,4 +6,6 @@ class AppImages {
 class AppIcons {
   static const String exploreIcon = 'assets/images/icons/explore_icon.svg';
   static const String appbarActionIcon = 'assets/images/icons/action_icon.svg';
+
+  static const String positionIcon1 = 'assets/images/icons/position_icon.svg';
 }

@@ -35,15 +35,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: title,
       titleTextStyle: Theme.of(context).textTheme.titleMedium!.apply(color: AppColors.appWhite),
       actions: actions,
-      // flexibleSpace: Container(
-      //   decoration: const BoxDecoration(
-      //     gradient: LinearGradient(
-      //         begin: Alignment.topCenter,
-      //         end: Alignment.bottomCenter,
-      //         colors: <Color>[Colors.pink, Colors.deepOrangeAccent, Colors.black45]),
-      //
-      //   ),
-      // ),
+      flexibleSpace: Container(
+        decoration:  BoxDecoration(
+          gradient: LinearGradient(
+              colors: [Colors.orange, Colors.pink.shade300],
+              begin: FractionalOffset(0.0, 0.0),
+              end: FractionalOffset(0.8, 0.1),
+              stops: [0.0, 2.0],
+          ),
+
+        ),
+      ),
       backgroundColor: AppColors.orange.withValues(alpha: .8),
     );
   }
